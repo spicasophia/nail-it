@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail It</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+<!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<style>
+.card {
+  font-family:'Times New Roman', Times, serif;
+  padding: 2%;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Add elaborate border */
+}
+
+.card:hover {
+  background-color: white;
+  color: black;
+}
+</style>
+<body>
+    <!-- ----------------------------------navbar start--------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" nav class="navbar bg-dark" data-bs-theme="dark">  
+          <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./my images/logo (1).jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Nail'n'Gloss</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/#carouselExampleCaptions">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About Our Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/#all-products">Our Products</a></li>
+                <li><a class="dropdown-item" href="#">Book an Appointment</a></li>
+                <li><a class="dropdown-item" href="/#master-wrapper">Client Reviews</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ------------------------------------navbar ends-------------------------------- -->
+      <!-- <div>
+        <blockquote class="blockquote">
+          <p class="pb-3">
+            <i class="fas fa-quote-left fa-xs text-primary"></i>
+            <span class="lead font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam impedit similique sunt porro quasi, temporibus ratione non dolore, itaque nemo ex id necessitatibus aperiam eligendi tempore facere adipisci molestias quibusdam nobis qui eum. Vitae doloremque ex quia reprehenderit harum sed..</span>
+            <i class="fas fa-quote-right fa-xs text-primary"></i>
+          </p>
+        </blockquote>
+      </div> -->
+
+<!-- ----------------------------carousel start------------------------------------------- -->
+     <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="height: 2%;">
+    <div class="carousel-item active">
+      <img src="./my images/3.jpg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Care and Fun</h5>
+        <p>Meet with our team of professional technicians</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./my images/img 2.jpg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./my images/4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- --------------------------------------about section------------------ -->
+<div id="about">
+  <div class="gloss">
+    <img src="./my images/splash.png" alt="">
+  </div>
+  <div class="about-text">
+    <h1 style="font-family: 'Times New Roman', Times, serif">Nail'n'Gloss</h1>
+    <p style="font-family: 'Dancing Script', cursive; color: rgb(216,135,134);font-weight: lighter; font-size: 25px;">the ultimate nail salon experience</p>
+  <h3>About Our Services</h3>
+  <p>We pride ourselves on delivering a premium service at an affordable price. <br>
+    Our highly skilled team is dedicated to going the extra mile to ensure our customers complete satisfaction.<br>
+    Our service offering includes Manicures, Pedicures, Nail Dip, Acrylic and Gel systems as well as an array of Nail, Cuticle and Beauty products.</p>
+
+    <button type="button" class="btn btn-dark">Learn More</button>
+  </div>
+</div>
+<!-- -------------------------------------products section---------------------------------------------- -->
+<br>
+<section id="all-products">
+  <h1 class="products">All Products</h1>
+</section>
+<!-- -----Tier 1 -->
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="./my images/beginner set.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Acrylic Beginner Set</h5>
+      <p class="card-text">72 in 1 Acrylic Nail Kit - 24 Colors Acrylic Powder Nail Kit Set Professional Acrylic with Everything for Acrylic Nails Extension Beginner Kit.</p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>  
+
+</div>
+  </div>
+
+  <div class="card ">
+    <img class="card-img-top" src="./my images/nail dryer.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Nail Dryer</h5>
+      <p class="card-text">Nail Lamp, SOLVE Nail Dryer for Gel Nail Polish 48W Faster Nail Light with 4 Timer Smart Auto Sensor, Touch Screen and Large Space, Professional Nail Art Design Salon DIY at Home.</p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>  
+
+     </div>
+  </div>
+
+  <div class="card ">
+    <img class="card-img-top" src="./my images/acrylic brush.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Acrylic Brush Set</h5>
+      <p class="card-text">19 Pcs Nail Art Brushes Acrylic Nail Brush Set for Acrylic Application, UV Gel Nail Polish Brush Nail Art Painting Brush Dotting Tool Nail Dust Remover Brushes for Nail Salon Art Tools.</p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- -----------------Tier 2---------------- -->
+<div class="card-group">
+  <div class="card ">
+    <img class="card-img-top" src="./my images/manicure table.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Manicure Table</h5>
+      <p class="card-text">Manicure Table Nail Station, Nail Desk Workstation Nail Art Equipment w/Dust Collector, Wrist Cushion, Lockable Wheels, Storage Cabinet & Drawers</p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>
+
+   </div>
+  </div>
+
+  <div class="card ">
+    <img class="card-img-top" src="./my images/nail stamping kit.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Nail Stamping Kit</h5>
+      <p class="card-text">5 Image plates, Silicone stamper & scraper, 2 Bottles Special Stamping Nail Polish 1 White & 1 Black.</p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card ">
+    <img class="card-img-top" src="./my images/nail drill.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Nail Drill Machine</h5>
+      <p class="card-text">Professional Nail Drill Machine, Portable Nail Drills for Acrylic Nails, Electric Nail File Rechargeable Efile Nail Drill For Gel Nails Remove, Home and Salon Use Nail Tools  </p>
+      <p class="card-text"><small class="price">$15.99 <span>$20.99</span></small></p>
+
+      <div class="hide">
+        <button>Buy</button> 
+        <button>View</button> 
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- ----------------------------testimonials---------------------------------- -->
+<div id="master-wrapper">
+  <div class="client-review active">
+    <h4 class="testy">testimonials</h4>
+    <h1>WHAT OUR CLIENTS SAY</h1>
+    <i class="bi bi-quote"></i>
+    <p class="review">From the moment I walked in, the staff was warm and welcoming. The technician who<br>did my pedicure was professional, attentive, and really took the time to ensure that I<br>was comfortable throughout the entire process. The salon itself was clean and well-maintained.</p>
+    <hr style="width: 30%; margin: 0 auto">
+    <h3 style="font-weight: 1px; font-family: 'Times New Roman', Times, serif; padding-bottom: 50px;">Sophia</h3>
+    <div class="review-btn">
+    <button onclick="showPreviousReview()"><span class="material-symbols-outlined">arrow_back </span></button>
+    <button onclick="showNextReview()"><span class="material-symbols-outlined">arrow_forward</span></button>
+    </div>
+  </div>
+
+  <div class="client-review">
+    <h4 class="testy">testimonials</h4>
+    <h1>WHAT OUR CLIENTS SAY</h1>
+    <i class="bi bi-quote"></i>
+    <p class="review">One important thing I love about The Nail Boutique is that they always get the job done<br>well and neatly. I would also attest to the fact that they helped in grooming my nails and<br>making them stronger.</p>
+    <hr style="width: 30%; margin: 0 auto">
+    <h3 style="font-weight: 1px; font-family: 'Times New Roman', Times, serif; padding-bottom: 50px;">Favour</h3> 
+
+    <div class="review-btn">
+    <button><span class="material-symbols-outlined">arrow_back </span></button>
+    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+    </div>
+  </div>
+
+  <div class="client-review">
+    <h4 class="testy">testimonials</h4>
+    <h1>WHAT OUR CLIENTS SAY</h1>
+    <i class="bi bi-quote"></i>
+    <p class="review">I rarely let anyone file my nails down cos I find Nail-Techs here are used to artificial<br>nails, they forget to be less abrasive when dealing with natural nails, But Kassim at<br>@Nail'n'Gloss was top<img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f44c-1f3fe.svg" style="width: 50px; height: 25px; margin: 0;">!!!</p>
+    <hr style="width: 30%; margin: 0 auto">
+    <h3 style="font-weight: 1px; font-family: 'Times New Roman', Times, serif; padding-bottom: 50px;">Annie</h3>
+
+    <div class="review-btn">
+    <button><span class="material-symbols-outlined">arrow_back </span></button>
+    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+    </div>
+  </div>
+
+  <div class="client-review">
+    <h4 class="testy">testimonials</h4>
+    <h1>WHAT OUR CLIENTS SAY</h1>
+    <i class="bi bi-quote"></i>
+    <p class="review">If you are in Nigeria, I highly recommend @Nail'n'Gloss. Their customer service<br>and delivery is next level!.</p>
+    <hr style="width: 30%; margin: 0 auto">
+    <h3 style="font-weight: 1px; font-family: 'Times New Roman', Times, serif; padding-bottom: 50px;">Freda</h3>
+
+    <div class="review-btn">
+    <button><span class="material-symbols-outlined">arrow_back </span></button>
+    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+    </div>
+  </div>
+</div>
+<!-- -----------------------------------book-appointment--------------------------------------------- -->
+<div class="appointment">
+  <h4>Appointment</h4>
+  <h1>Book your time to get</h1>
+  <p>#nailed at Nail'n'Gloss</p>
+  <button>Book Now <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+
+<!-- ------------------------------------------------------------------ -->
+<div class="newsletter" style="background-color: black;">
+  <hr style="width: 100%; margin: 0 auto; color: grey;">
+
+  <h2>Nail'n'Gloss</h2>
+</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="/js/script.js"></script>
+
+      <script></script>
+</body>
+</html> 
